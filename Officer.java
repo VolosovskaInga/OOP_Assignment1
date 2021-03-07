@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class Officer {
     public String name;
@@ -19,13 +19,9 @@ public class Officer {
 
     }
 
-    public Officer(Scanner input) {
-
-    }
-
     public String toString() {
-        return name + " " + surname + ": Officers ID: " + officerID + "; Working district: " + workingDistrict +
-                "; Number of solved crimes is: " + crimesSolved;
+        return "Name- " + name + "; Surname- " + surname + "; Officers ID- " + officerID + "; Working district- " + workingDistrict +
+                "; Number of solved crimes is- " + crimesSolved;
     }
 
     public void setName(String name) {

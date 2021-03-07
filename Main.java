@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Main {
 
@@ -6,47 +7,24 @@ public class Main {
         Officer secondOfficer = new Officer("David", "Black", 66758, "Manhattan", 32);
         Officer thirdOfficer = new Officer("Jack", "Red", 23765, "Queens", 5);
 
-        System.out.println();
         System.out.println("Details of first officer:");
-        System.out.println(firstOfficer);
+        System.out.println(firstOfficer.toString());
         System.out.println();
-        //Officer firstOfficer = new Officer();
-
-        // firstOfficer.setName("Jon");
-        //firstOfficer.setSurname("White");
-        //firstOfficer.setOfficerID(22456);
-        //firstOfficer.setWorkingDistrict("Brooklyn");
-        //firstOfficer.setCrimesSolved(132);
-
-        //System.out.println("Details of first officer:");
-        //firstOfficer.printDetails();
-        //System.out.println();
-
-        //Officer secondOfficer = new Officer();
-        //secondOfficer.setName("David");
-        //secondOfficer.setSurname("Black");
-        //secondOfficer.setOfficerID(66758);
-        //secondOfficer.setWorkingDistrict("Manhattan");
-        //secondOfficer.setCrimesSolved(34);
 
         System.out.println("Details of second officer:");
-        secondOfficer.printDetails();
+        System.out.println(secondOfficer.toString());
         System.out.println();
-
-        //Officer thirdOfficer = new Officer();
-        //thirdOfficer.setName("Jack");
-        //thirdOfficer.setSurname("Red");
-        //thirdOfficer.setOfficerID(23765);
-        //thirdOfficer.setWorkingDistrict("Queens");
-        //thirdOfficer.setCrimesSolved(5);
 
         System.out.println("Details of third officer:");
-        thirdOfficer.printDetails();
+        System.out.println(thirdOfficer.toString());
         System.out.println();
 
-        thirdOfficer.calculatedLevel();
 
-        Officer[] district99 = {firstOfficer, secondOfficer, thirdOfficer};
+        //Officer[] district99 = {firstOfficer, secondOfficer, thirdOfficer};
+        ArrayList<Officer> district99= new ArrayList<>();
+        district99.add(firstOfficer);
+        district99.add(secondOfficer);
+        district99.add(thirdOfficer);
 
 
         int counter = 0;
@@ -75,6 +53,7 @@ public class Main {
             }
 
         }
+        System.out.println(district99);
 
     }
 
